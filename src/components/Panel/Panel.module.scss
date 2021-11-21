@@ -1,3 +1,10 @@
 .panel {
-    color: gold;
+    background: #dfe3e6;
+    border-radius: 3px;
+    width: 272px;
+    margin-right: 12px;
+
+    .items {
+        padding: 12px 12px 0 12px;
+    }
 }

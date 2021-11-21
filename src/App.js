@@ -1,9 +1,12 @@
-import React from 'react';
-import {Panel, Card} from "./components";
+import React from "react";
+import { Panel, Card } from "./components";
 
 function App() {
   return (
-    <div><Panel /> <Card /></div>
+    <div className="app">
+      <Panel items={[{text: "React"}, {text: "React"}, {text: "React"}]} />
+      <Panel items={null} />
+    </div>
   );
 }
 

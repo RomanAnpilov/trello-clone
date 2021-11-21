@@ -1,0 +1,46 @@
+.add_form {
+    padding: 12px 12px 12px 12px;
+    
+    .input {
+        textarea {
+            border: 0;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            resize: none;
+            cursor: text;
+        }
+
+        margin-bottom: 10px;
+    }
+
+    .bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    img {
+        cursor: pointer;
+    }
+}
+
+.add_bottom {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    border-radius: 0 0 3px 3px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #6b808c;
+    transition: all 0.15s;
+
+    &:hover {
+        background-color: darken($color: #dfe3e6, $amount: 10);
+        color: darken($color: #6b808c, $amount: 40);
+    }
+
+    img {
+        margin-right: 8px;
+    }
+}
