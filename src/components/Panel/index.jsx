@@ -4,13 +4,16 @@ import styles from "./Panel.module.scss";
 
 import { Card, AddForm } from "../index";
 
-const Panel = ({ items }) => {
+const Panel = ({ title,cards }) => {
   return (
-    <div className={styles.panel}>
-      {items && (
+   <div className={styles.panel}>
+      {title && <div className={styles.title}>
+        <b>{title}</b>
+      </div>}
+      {cards && (
         <div className={styles.items}>
-          {items.map((card, index) => (
-            <Card key={index}>{card.text}</Card>
+          {cards.map((card, index) => (
+            <Card key={index}>{card}</Card>
           ))}
         </div>
       )}
