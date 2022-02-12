@@ -2,7 +2,7 @@ const initialState = {
   items: [
     {
       title: "Plan on month",
-      cards: ["React", "React", "React"],
+      cards: ["React", "React", "React", "React", "React", "React", "React", "React"],
     },
     {
       title: "Plan on month",

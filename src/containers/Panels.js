@@ -2,6 +2,8 @@ import React from "react";
 import { Panel } from "../components";
 import { connect } from "react-redux";
 
+import panelsAction from "../actions/panels"
+
 const Panels = ({ items }) => (
   <>
     {items.map((item, index) => (
@@ -12,4 +14,4 @@ const Panels = ({ items }) => (
   </>
 );
 
-export default connect(({ panels }) => panels)(Panels);
+export default connect(({ panels }) => panels,panelsAction)(Panels);

@@ -1,15 +1,26 @@
 .panel {
-    background: #dfe3e6;
-    border-radius: 3px;
-    width: 272px;
-    margin-right: 12px;
 
-    .items {
-        padding: 12px 12px 0 12px;
-    }
+  border-radius: 3px;
+  width: 272px;
+  margin-right: 12px;
+  overflow: auto;
+  height: calc(100% - 40px);
+  vertical-align: top;
 
-    .title {
-        padding: 12px;
-        padding-bottom: 0px;
-    }
+  .inner {
+      max-height: 100%;
+      background: #dfe3e6;
+      position: relative;
+  }
+
+  .items {
+    padding: 12px 12px 0 12px;
+    height: 100%;
+    overflow: auto;
+  }
+
+  .title {
+    padding: 12px;
+    padding-bottom: 0px;
+  }
 }
